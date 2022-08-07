@@ -64,7 +64,7 @@ Note: SyncSingleton is not Thread Safe
 
 
 The siplest solution would be to synchronize the getInstance() method. But this would affect the\
-performance of the pgm if the Singleton is called frequently.\
+performance of the pgm if the Singleton is called frequently.
 
 Solution :\
 To resolve this problem is to have a second verification inside the synchronized block\
