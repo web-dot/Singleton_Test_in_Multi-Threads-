@@ -2,7 +2,7 @@
 
 ### below outputs while running main class demonstrates the success or failure of the Singleton implementaion on each run.
 
-ThreadSafeSingleton(TSafeSingleton) :
+#### ThreadSafeSingleton(TSafeSingleton) :
 
 run01 :\
 T2 inside getInstance()\
@@ -21,7 +21,7 @@ T1 created instance
 Note: TSafeSingleton is not Thread Safe
 
 
-SynchronizedSingleton(SyncSingleton) :
+#### SynchronizedSingleton(SyncSingleton) :
 
 run01 :\
 T2 inside getInstance()\
@@ -70,7 +70,7 @@ Solution :\
 To resolve this problem is to have a second verification inside the synchronized block\
 using a idiom called  Double-Checked Locking.
 
-DoubleCheckedSingleton :\
+#### DoubleCheckedSingleton :
 
 run10 :\
 T2 inside getInstance()\
@@ -127,7 +127,7 @@ will crash and will be difficult to trace why.
 
 #### This can be resolved using the volatile keyword, ensuring that different threads correctly handle cncurrent access to a single instance of a Singleton.
 
-VolatileSingleton :\
+#### VolatileSingleton :
 
 run01 :\
 T2 inside getInstance()\
