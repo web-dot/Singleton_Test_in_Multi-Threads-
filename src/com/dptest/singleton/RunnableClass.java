@@ -16,8 +16,11 @@ public class RunnableClass implements Runnable {
         TSafeSingleton tsing = null;
         //tsing.getInstance();
         
-        SyncSingleton tsync = null;
-        tsync.getInstance();
+        SyncSingleton synsing = null;
+        //synsing.getInstance();
+        
+        DoubleCheckedSingleton dosyn = null;
+        dosyn.getInstance();
     }
     
 }
