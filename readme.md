@@ -18,7 +18,7 @@ T2 inside null check\
 T2 created instance\
 T1 created instance
 
-Note: TSafeSingleton is not TSafe
+Note: TSafeSingleton is not Thread Safe
 
 
 SynchronizedSingleton(SyncSingleton) :
@@ -37,6 +37,6 @@ T2 inside null check\
 T2 inside synchronized block\
 T1 inside getInstance()
 
-Note: TSafeSingleton is not TSafe
+Note: TSafeSingleton is not Thread Safe
 
 
