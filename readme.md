@@ -63,7 +63,7 @@ T1 inside getInstance()
 Note: SyncSingleton is not Thread Safe
 
 
-The siplest solution would be to synchronize the getInstance() method. But this would affect the\
+The simplest solution would be to synchronize the getInstance() method. But this would affect the\
 performance of the pgm if the Singleton is called frequently.
 
 Solution :\
