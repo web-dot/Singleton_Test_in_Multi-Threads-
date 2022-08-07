@@ -19,8 +19,12 @@ public class RunnableClass implements Runnable {
         SyncSingleton synsing = null;
         //synsing.getInstance();
         
-        DoubleCheckedSingleton dosyn = null;
-        dosyn.getInstance();
+        DoubleCheckedSingleton dosing = null;
+        //dosing.getInstance();
+        
+        VolatileSingleton vosing = null;
+        vosing.getInstance();
+        
     }
     
 }

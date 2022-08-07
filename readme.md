@@ -106,3 +106,70 @@ T2 out of getInstance() method\
 T1 inside getInstance()\
 T1 out of getInstance() method
 
+run18 :\
+T2 inside getInstance()\
+T1 inside getInstance()\
+T2 inside first null check\
+T1 inside first null check\
+T2 inside synchronized block\
+T2 inside second null check\
+T2 created INSTANCE\
+T2 out of getInstance() method\
+T1 inside synchronized block\
+T1 out of getInstance() method
+
+Note: DoubleCheckedSingleton is Thread Safe.\ 
+Disadvantage: If the instance variable pointing\ 
+to the singleton object is invoked before a thread\ 
+has completely instantiated the Singleton the program\ 
+will crash and will be difficult to trace why.
+
+
+#### This can be resolved using the volatile keyword, ensuring that different threads correctly handle cncurrent access to a single instance of a Singleton.
+
+VolatileSingleton :\
+
+run01 :\
+T2 inside getInstance()\
+T1 inside getInstance()\
+T1 inside first null check\
+T2 inside first null check\
+T1 inside synchronized block\
+T1 inside second null check\
+T1 created INSTANCE\
+T1 out of getInstance() method\
+T2 inside synchronized block\
+T2 out of getInstance() method
+
+
+run08 :\
+T1 inside getInstance()\
+T2 inside getInstance()\
+T2 inside first null check\
+T2 inside synchronized block\
+T2 inside second null check\
+T2 created INSTANCE\
+T2 out of getInstance() method\
+T1 inside first null check\
+T1 inside synchronized block\
+T1 out of getInstance() method
+
+
+run #\
+T2 inside getInstance()\
+T1 inside getInstance()\
+T1 inside first null check\
+T2 inside first null check\
+T1 inside synchronized block\
+T1 inside second null check\
+T1 created INSTANCE\
+T1 out of getInstance() method\
+T2 inside synchronized block\
+T2 out of getInstance() method
+
+Note: VolatileSingleton is Thread Safe.\
+
+
+
+
+
