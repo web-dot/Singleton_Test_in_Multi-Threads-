@@ -97,12 +97,12 @@ T2 inside synchronized block\
 T2 out of getInstance() method
 
 run17 :\
-T2 inside getInstance()
-T2 inside first null check
-T2 inside synchronized block
-T2 inside second null check
-T2 created INSTANCE
-T2 out of getInstance() method
-T1 inside getInstance()
+T2 inside getInstance()\
+T2 inside first null check\
+T2 inside synchronized block\
+T2 inside second null check\
+T2 created INSTANCE\
+T2 out of getInstance() method\
+T1 inside getInstance()\
 T1 out of getInstance() method
 
