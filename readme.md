@@ -118,10 +118,10 @@ T2 out of getInstance() method\
 T1 inside synchronized block\
 T1 out of getInstance() method
 
-Note: DoubleCheckedSingleton is Thread Safe.\ 
-Disadvantage: If the instance variable pointing\ 
-to the singleton object is invoked before a thread\ 
-has completely instantiated the Singleton the program\ 
+Note: DoubleCheckedSingleton is Thread Safe.<br/> 
+Disadvantage: If the instance variable pointing<br/>
+to the singleton object is invoked before a thread<br/>
+has completely instantiated the Singleton the program<br/>
 will crash and will be difficult to trace why.
 
 
