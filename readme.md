@@ -37,6 +37,22 @@ T2 inside null check\
 T2 inside synchronized block\
 T1 inside getInstance()
 
+run11 :\
+T1 inside getInstance()\
+T1 inside null check\
+T1 inside synchronized block\
+T2 inside getInstance()
+
+run13 :\
+T1 inside getInstance()\
+T2 inside getInstance()\
+T1 inside null check\
+T2 inside null check\
+T1 inside synchronized block\
+T1 creates instance\
+T2 inside synchronized block\
+T2 creates instance
+
 Note: TSafeSingleton is not Thread Safe
 
 

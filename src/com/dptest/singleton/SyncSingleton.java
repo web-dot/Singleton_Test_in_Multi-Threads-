@@ -28,6 +28,7 @@ public class SyncSingleton {
             synchronized(SyncSingleton.class){
                 System.out.println(Thread.currentThread().getName() + " inside synchronized block");
                 INSTANCE = new SyncSingleton();
+                System.out.println(Thread.currentThread().getName() + " creates instance");
             }
         }
         return INSTANCE;
