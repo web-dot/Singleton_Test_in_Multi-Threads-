@@ -14,7 +14,10 @@ public class RunnableClass implements Runnable {
     @Override
     public void run() {
         TSafeSingleton tsing = null;
-        tsing.getInstance();
+        //tsing.getInstance();
+        
+        SyncSingleton tsync = null;
+        tsync.getInstance();
     }
     
 }
