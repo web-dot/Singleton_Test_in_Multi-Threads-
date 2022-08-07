@@ -18,7 +18,7 @@ public class TestClass {
         T2.setName("T2");
         
         T1.start();
-        T1.sleep(100);
+        //T2.sleep(100);
         T2.start();
     }
 }

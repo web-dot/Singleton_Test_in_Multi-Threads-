@@ -18,6 +18,7 @@ public class TSafeSingleton {
    public static TSafeSingleton getInstance(){
        System.out.println(Thread.currentThread().getName() + " inside getInstance()");
        if(INSTANCE == null){
+           System.out.println(Thread.currentThread().getName() + " inside null check");
            INSTANCE = new TSafeSingleton();
            System.out.println(Thread.currentThread().getName() + " created instance");
        }
