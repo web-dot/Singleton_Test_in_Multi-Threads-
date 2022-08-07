@@ -107,3 +107,6 @@ T1 inside getInstance()
 T1 out of getInstance() method
 
 
+@settings {
+  font-size: 25;
+}
